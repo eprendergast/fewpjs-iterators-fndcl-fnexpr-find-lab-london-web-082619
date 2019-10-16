@@ -7,9 +7,9 @@ const record = [
 ];
 
 function superbowlWin(array){
-  ;
-  if (winningYear == true){
-    return winningYear.year;
+  if (array.find(record => checkForWin(record))){
+    let result = array.find(record => checkForWin(record));
+    return result.year;
   } else {
     return undefined;
   }
